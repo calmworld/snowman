@@ -35,3 +35,15 @@ class Word():
                 else:
                     strikes += [letter]
                     print("\n>*>*>    That\'s not right!    <*<*<    Keep Guessing..\n")
+            print("Play Word Now: ", "".join(display_word))
+            print("Guessed Letters: ", guesses)
+            print("Remaining Strikes: " + str(8-len(strikes)) + "\n")
+
+            if display_word == word:
+                win == True
+        
+        if win == True:
+            print("\nRemarkable! You Won!")
+        else:
+            print("\nBetter Luck Next Time!")
+        print("The word was '", ''.join(word) , "'")
