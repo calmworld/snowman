@@ -47,3 +47,15 @@ class Word():
         else:
             print("\nBetter Luck Next Time!")
         print("The word was '", ''.join(word) , "'")
+
+        while True:
+            play_again = input("\nPlay Again? y/n ")
+            if play_again == 'n' or play_again == 'N':
+                print('ta ta!')
+                continue_play = False
+                break
+            elif play_again == 'y' or play_again == 'Y':
+                print('OUTSTANDING!')
+                break
+            else:
+                continue
